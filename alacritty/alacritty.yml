@@ -1,0 +1,85 @@
+live_config_reload: true
+working_directory: None
+
+colors:
+  draw_bold_text_with_bright_colors: false
+
+  bright:
+    black: "#7c8f8f"
+    blue: "#78c2ff"
+    cyan: "#85dc85"
+    green: "#36c692"
+    magenta: "#ae81ff"
+    red: "#ff5189"
+    white: "#e2637f"
+    yellow: "#bfbf97"
+
+  cursor:
+    cursor: "#9e9e9e"
+    text: "#080808"
+
+  normal:
+    black: "#373c40"
+    blue: "#80a0ff"
+    cyan: "#79dac8"
+    green: "#8cc85f"
+    magenta: "#d183e8"
+    red: "#ff5454"
+    white: "#a1aab8"
+    yellow: "#e3c78a"
+
+  primary:
+    background: "#060011"
+    bright_foreground: "#ffff00"
+    foreground: "#b2b2b2"
+
+  selection:
+    background: "#ffa500"
+    text: "#080808"
+
+  vi_mode_cursor:
+    cursor: "CellForeground"
+    text: "CellBackground"
+
+env:
+  TERM: "xterm-256color"
+
+window:
+  decorations: none
+  dynamic_title: true
+  opacity: 0.9
+  blur: true
+  option_as_alt: Both
+  startup_mode: Windowed
+  title: "Alacritty"
+  padding:
+    x: 3
+    y: 5
+
+font:
+   normal:
+    family: "MesloLGS Nerd Font Mono"
+
+shell:
+  program: "/usr/bin/zsh"
+
+
+cursor:
+  unfocused_hollow: true
+
+  style:
+    blinking: On
+    shape: Beam
+
+mouse:
+  hide_when_typing: true
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+keyboard:
+  bindings:
+    - { key: "Return", mods: "Command", action: "ToggleSimpleFullScreen" }
+    - { key: "C", mods: "Control", action: "Copy" }
+    - { key: "V", mods: "Control", action: "Paste" }
